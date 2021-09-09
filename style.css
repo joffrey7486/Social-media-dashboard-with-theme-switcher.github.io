@@ -226,7 +226,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_progress_up {
-  background: url(https://github.com/joffrey7486/Social-media-dashboard-with-theme-switcher.github.io/blob/main/images/icon-up.svg?short_path=ddaa4c1#:~:text=%3C%20svg%20%20xmlns%20%3D%20%22%20http%3A//www.w3.org/2000/svg%20%22%20%20width%20%3D%20%22%208%20%22%20%20height%20%3D%20%22%204%20%22%20%3E%3C%20path%20%20fill%20%3D%20%22%20%231EB589%20%22%20%20fill-rule%20%3D%20%22%20evenodd%20%22%20%20d%20%3D%20%22%20M0%204l4%20-4%204%204z%20%22%20/%3E%3C/%20svg%20%3E) no-repeat;
+  background: url(./images/icon-up.svg) no-repeat;
   background-size: 15px;
   background-position: center;
   height: 20px;
