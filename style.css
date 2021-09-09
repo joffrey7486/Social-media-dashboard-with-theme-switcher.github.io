@@ -254,7 +254,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_twitter {
-  background: url(./images/icon-twitter.svg) no-repeat;
+  background: url(./images/twitter.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
