@@ -236,7 +236,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_progress_down {
-  background: url(/images/icon-down.svg) no-repeat;
+  background: url(./images/icon-down.svg) no-repeat;
   background-size: 15px;
   background-position: center;
   height: 20px;
@@ -246,7 +246,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_fb {
-  background: url(/images/icon-facebook.svg) no-repeat;
+  background: url(./images/icon-facebook.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -254,7 +254,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_twitter {
-  background: url(/images/icon-twitter.svg) no-repeat;
+  background: url(./images/icon-twitter.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -262,7 +262,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_insta {
-  background: url(/images/icon-instagram.svg) no-repeat;
+  background: url(./images/icon-instagram.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -270,7 +270,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_youtube {
-  background: url(/images/icon-youtube.svg) no-repeat;
+  background: url(./images/icon-youtube.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
