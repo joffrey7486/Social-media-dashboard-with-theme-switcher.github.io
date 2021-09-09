@@ -1,0 +1,10 @@
+$desktop: "only screen and (max-width: 1440px)";
+$laptop: "only screen and (max-width: 1024px)";
+$tablet: "only screen and (max-width: 786px)";
+$mobileL: "only screen and (max-width: 425px)";
+$mobileM: "only screen and (max-width: 375px)";
+
+/* 
+Pour import => @import "responsive.scss";
+Pour utiliser => @media #{$desktop}{}
+*/

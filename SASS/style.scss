@@ -1,0 +1,409 @@
+@import "responsive.scss";
+@import "style_guide.scss";
+/* 
+Pour import => @import "responsive.scss";
+Pour utiliser => @media only screen and (min-width: 1440px){}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Inter', sans-serif;
+}
+
+.main{
+    background: $WhiteBG;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vh;
+    .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        padding-bottom: 3vh;
+        .txt{
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                color: $DarkGrayText;
+            }
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            width: 10vw;
+            justify-content: space-between;
+            p{
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $DarkGrayText;
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                margin-right: 16px;
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                  }
+                  .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $toggle;
+                    transition: .4s;
+                    border-radius: 30px;
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 22px;
+                        width: 22px;
+                        left: 32.5px;
+                        bottom: 4px;
+                        background: #fff;
+                        transition: .4s;
+                      }
+                      .round {
+                        border-radius: 34px;
+                      }
+                      
+                      &:before {
+                        border-radius: 50%;
+                      }
+                  }
+                  input:checked + .slider {
+                    background: $toggleActive;
+                    &:before{
+                        background: $DarkDesaturatedBlueCard;
+                    }
+                  }
+                  input:focus + .slider {
+                    box-shadow: 0 0 1px #2196F3;
+                  }
+                  input:checked + .slider:before {
+                    transform: translateX(-30px);
+                  }
+              }
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        .box{
+            height: 26vh;
+            width: 18vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 5px;
+            background: $VeryPaleBlueTopBGPattern;
+            cursor: pointer;
+            &:hover{
+                background: $LightGrayBlueCardBG;
+                transition: .4s;
+            }
+            .profil{
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+            .num{
+                font-size: 60px;
+                font-weight: 700;
+            }
+            .follow{
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+                color: $DarkGrayText;
+            }
+        }
+    }
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+        padding-bottom: 3vh;
+        h2{
+            color: $DarkGrayText;
+            font-size: 35px;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80vw;
+        .box{
+            height: 16vh;
+            width: 18vw;
+            margin: 2vh 1vw;
+            background: $VeryPaleBlueTopBGPattern;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                background: $LightGrayBlueCardBG;
+                transition: .4s;
+            }
+            .top{
+                display: flex;
+                padding: 0;
+                flex-direction: row;
+                width: 16vw;
+                justify-content: space-between;
+                p{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+            }
+            .score{
+                display: flex;
+                flex-direction: row;
+                width: 16vw;
+                justify-content: space-between;
+                .num{
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+// CCS LOGO COLOR PROGRESS
+.progress{
+    display: flex;
+    align-items: center;
+}
+.up{
+    color: $LimeGreen;
+    font-weight: 700;
+}
+.down{
+    color: $BrightRed;
+    font-weight: 700;
+}
+
+.logo_progress_up{
+    background: url(/images/icon-up.svg) no-repeat;
+    background-size: 15px;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    padding: 0px 20px;
+}
+.logo_progress_down{
+    background: url(/images/icon-down.svg) no-repeat;
+    background-size: 15px;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    padding: 0px 20px;
+}
+
+
+// CSS LOGO SOCIAL
+.logo_fb{
+    background: url(/images/icon-facebook.svg) no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 0px 20px;
+}
+.logo_twitter{
+    background: url(/images/icon-twitter.svg) no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 0px 20px;
+}
+.logo_insta{
+    background: url(/images/icon-instagram.svg) no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 0px 20px;
+}
+.logo_youtube{
+    background: url(/images/icon-youtube.svg) no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 0px 20px;
+}
+
+// CSS BORDER TOP COLOR
+.fb_box{
+    border-top: solid 5px;
+    border-top-color: $Facebook;
+}
+.twitter_box{
+    border-top: solid 5px;
+    border-top-color: $Twitter;
+}
+.insta_box{
+    border-top: solid 5px;
+    border-image: $Instagram;
+}
+.youtube_box{
+    border-top: solid 5px;
+    border-top-color: $YouTube;
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: -1rem;
+}
+// Responsive
+@media #{$desktop}{
+    .top{
+        .head{
+            width: 75vw;
+            .btn{
+                width: 13vw;
+                .switch{
+                    margin-right: 10px;
+                    width: 70px;
+                    .slider:before{
+                        left: 42px;
+                    }
+                    input:checked + .slider:before {
+                        transform: translateX(-34px);
+                      }
+                }
+            }
+        }
+        .content{
+            width: 75vw;
+            .box{
+                height: 22vh;
+                .num{
+                    font-size: 3rem;
+                }
+                .follow{
+                    letter-spacing: 0.2rem;
+                }
+            }
+        }
+    }
+    .bottom{
+        .head{
+            width: 75vw;
+
+        }
+        .content{
+            width: 75vw;
+            .box{
+                height: 14vh;
+                width: 16vw;
+                .score{
+                    width: 14vw;
+                    .num{
+                        font-size: 35px;
+                    }
+                }
+                .top{
+                    width: 14vw;
+                    flex-wrap: wrap;
+                    p{
+                        font-size: .85rem;
+                    }
+                }
+            }
+        }
+    }
+    .progress{
+        span{
+            font-size: .95rem;
+        }
+    }
+    .social{
+        padding: 0px 12px;
+    }
+    .logo_progress{
+        padding: 0px 10px;
+    }
+}
+@media #{$laptop} {
+    .top .head .btn {width: 18vw;}
+    .top .content .box {height: 20vh;}
+    .top .content .box .follow {letter-spacing: 0.1rem;margin-top: -1rem;}
+    .bottom .content .box .top span {font-size: .8rem;}
+    .bottom .content .box .score .num {font-size: 22px;}
+    .progress span {font-size: 0.75rem;}
+}
+@media #{$tablet} {
+    .main{height: auto;}
+    .top{padding: 0;}
+    .top .head{flex-direction: column;align-items: center;}
+    .top .head .txt{display: flex;flex-direction: column;}
+    .top .head .txt h1 {margin-bottom: .2rem;}
+    .top .head .btn {width: 60vw;margin: 1rem 0;}
+    .top .content {flex-direction: column;align-items: center;}
+    .top .content .box { height: 18vh;width: 60vw;margin-bottom: 1.5rem;}
+    .bottom .head{justify-content: center;}
+    .bottom .content {flex-direction: column;align-items: center;}
+    .bottom .content .box {height: 10vh;width: 60vw;margin: 1vh 1vw;}
+    .bottom .content .box .top {width: 53vw;}
+    .bottom .content .box .top p {font-size: 1rem;}
+    .bottom .content .box .score {width: 53vw;}
+    .progress span {font-size: 0.8rem;}
+    
+}
+@media #{$mobileL} {
+    .top .head .txt span {font-size: 1rem;}
+    .top .head .txt h1 {font-size: 1.4rem;font-weight: 700;margin-top: 20px;}
+    .top .head .btn .switch {margin-right: 0px;}
+    .top .head .btn {width: 74vw;}
+    .top .content .box{width: 75vw;}
+    .bottom .content .box {width: 75vw;}
+    .bottom .content .box .top{width: 65vw;}
+    .bottom .content .box .score{width: 65vw;}
+}
+
