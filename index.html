@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main" id="main">
+    <div class="top">
+      <div class="head">
+        <div class="txt">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="btn">
+          <p>Dark Mode</p> 
+          <label class="switch" >
+          <input type="checkbox" id="btn">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+      <div class="content">
+        <div class="box fb_box">
+          <div class="profil"><div class="social logo_fb"></div><p>@nathanf</p></div>
+          <div class="num">1987</div>
+          <div class="follow">Followers</div>
+          <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>12 Today</span></div>
+        </div>
+        <div class="box twitter_box">
+          <div class="profil"><div class="social logo_twitter"></div><p>@nathanf</p></div>
+          <div class="num">1044</div>
+          <div class="follow">Followers</div>
+          <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>99 Today</span></div>
+        </div>
+        <div class="box insta_box">
+          <div class="profil"><div class="social logo_insta"></div><p>@realnathanf</p></div>
+          <div class="num">11k</div>
+          <div class="follow">Followers</div>
+          <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>1099 Today</span></div>
+        </div>
+        <div class="box youtube_box">
+          <div class="profil"><div class="social logo_youtube"></div><p>NathanF.</p></div>
+          <div class="num">8239</div>
+          <div class="follow">Subscribers</div>
+          <div class="progress down"><div class="logo_progress logo_progress_down"></div><span>1099 Today</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="head">
+        <h2>Overview - Today</h2>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="top">
+            <p>Page Views</p>
+            <div class="logo_fb"></div>
+          </div>
+            <div class="score">
+              <div class="num">87</div>
+              <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>3%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Likes</p>
+            <div class="logo_fb"></div>
+            </div>
+            <div class="score">
+              <div class="num">52</div>
+              <div class="progress down"><div class="logo_progress logo_progress_down"></div><span>2%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Likes</p>
+            <div class="logo_insta"></div>
+            </div>
+            <div class="score">
+              <div class="num">5462</div>
+              <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>2257%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Profile Views</p>
+            <div class="logo_insta"></div>
+            </div>
+            <div class="score">
+              <div class="num">52k</div>
+              <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>1375%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Retweets</p>
+            <div class="logo_twitter"></div>
+            </div>
+            <div class="score">
+              <div class="num">117</div>
+              <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>303%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Likes</p>
+            <div class="logo_twitter"></div>
+            </div>
+            <div class="score">
+              <div class="num">507</div>
+              <div class="progress up"><div class="logo_progress logo_progress_up"></div><span>553%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Likes</p>
+            <div class="logo_youtube"></div>
+            </div>
+            <div class="score">
+              <div class="num">107</div>
+              <div class="progress down"><div class="logo_progress logo_progress_down"></div><span>19%</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <p>Total Views</p>
+            <div class="logo_youtube"></div>
+            </div>
+            <div class="score">
+              <div class="num">1407</div>
+              <div class="progress down"><div class="logo_progress logo_progress_down"></div><span>12%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/joffrey7486">C.Joffrey/FrontendMentor</a> 
+    <a href="https://github.com/joffrey7486">C.Joffrey/GitHub</a>.
+  </div>
+</body>
+</html>
