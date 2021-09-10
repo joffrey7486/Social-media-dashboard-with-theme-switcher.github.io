@@ -23,7 +23,7 @@ let darkTheme = function(){
         item.style.color = "hsl(228, 34%, 66%)"
     })
     box.forEach(item => {
-        item.style.backgroundColor = "hsl(232, 19%, 15%)"
+        item.style.backgroundColor = "hsl(228, 28%, 20%)"
     })   
 }
 
@@ -57,7 +57,7 @@ btn.addEventListener('click', function() {
 
 //function for hover theme
 box.forEach(item => {
-    item.addEventListener('mousemove', function(e){
+    item.addEventListener('mousemove', function(){
         if(btn.checked){
             item.style.backgroundColor = "hsl(232, 19%, 15%)"
         } else {
