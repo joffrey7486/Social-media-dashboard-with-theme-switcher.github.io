@@ -8,15 +8,7 @@ let box = document.querySelectorAll('.box')
 let num = document.querySelectorAll('.num')
 let btn = document.querySelector('input')
 
-btn.addEventListener('click', function() {
-    if(this.checked){
-        return darkTheme()
-    } else {
-        return lightTheme()
-    }
-})
-
-
+// function for darktheme
 let darkTheme = function(){
     main.style.backgroundColor = "hsl(230, 17%, 14%)"
     h1.style.color = "hsl(0, 0%, 100%)"
@@ -34,6 +26,8 @@ let darkTheme = function(){
         item.style.backgroundColor = "hsl(232, 19%, 15%)"
     })   
 }
+
+//function for lighttheme
 let lightTheme = function(){
     main.style.backgroundColor = "hsl(0, 0%, 100%)"
     h1.style.color = "hsl(230, 17%, 14%)"
@@ -51,3 +45,30 @@ let lightTheme = function(){
         item.style.backgroundColor = "hsl(225, 100%, 98%)"
     })
 }
+
+//call to the good function theme
+btn.addEventListener('click', function() {
+    if(this.checked){
+        return darkTheme()
+    } else {
+        return lightTheme()
+    }
+})
+
+//function for hover theme
+box.forEach(item => {
+    item.addEventListener('mousemove', function(e){
+        if(btn.checked){
+            item.style.backgroundColor = "hsl(232, 19%, 15%)"
+        } else {
+            item.style.backgroundColor = "hsl(227, 47%, 94%)"
+        }
+    })
+    item.addEventListener('mouseout', function(){
+        if(btn.checked){
+            item.style.backgroundColor = "hsl(228, 28%, 20%)"
+        } else {
+            item.style.backgroundColor = "hsl(225, 100%, 98%)"
+        }
+    })
+})
