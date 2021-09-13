@@ -1,7 +1,4 @@
-/* 
-Pour import => @import "responsive.scss";
-Pour utiliser => @media only screen and (max-width: 1440px){}
-*/
+
 /* 
 Pour import => @import "responsive.scss";
 Pour utiliser => @media only screen and (min-width: 1440px){}
