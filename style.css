@@ -9,7 +9,6 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
@@ -106,14 +105,15 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 .top .head .btn .switch input:checked + .slider:before {
   transform: translateX(-30px);
 }
-.top .content {
+
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 80vw;
 }
-.top .content .box {
-  height: 26vh;
+.content .box {
+  height: 310px;
   width: 18vw;
   display: flex;
   flex-direction: column;
@@ -123,23 +123,23 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
   background: #f5f7ff;
   cursor: pointer;
 }
-.top .content .box:hover {
+.content .box:hover {
   background: #e9ecf7;
   transition: 0.4s;
 }
-.top .content .box .profil {
+.content .box .profil {
   display: flex;
   align-items: center;
 }
-.top .content .box .profil p {
+.content .box .profil p {
   font-size: 14px;
   font-weight: 700;
 }
-.top .content .box .num {
+.content .box .num {
   font-size: 60px;
   font-weight: 700;
 }
-.top .content .box .follow {
+.content .box .follow {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: #5a5f72;
@@ -225,7 +225,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_progress_up {
-  background: url(./images/icon-up.svg) no-repeat;
+  background: url(/images/icon-up.svg) no-repeat;
   background-size: 15px;
   background-position: center;
   height: 20px;
@@ -235,7 +235,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_progress_down {
-  background: url(./images/icon-down.svg) no-repeat;
+  background: url(/images/icon-down.svg) no-repeat;
   background-size: 15px;
   background-position: center;
   height: 20px;
@@ -245,7 +245,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_fb {
-  background: url(./images/icon-facebook.svg) no-repeat;
+  background: url(/images/icon-facebook.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -253,7 +253,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_twitter {
-  background: url(./images/icon-twitter.svg) no-repeat;
+  background: url(/images/icon-twitter.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -261,7 +261,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_insta {
-  background: url(./images/icon-instagram.svg) no-repeat;
+  background: url(/images/icon-instagram.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -269,7 +269,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
 }
 
 .logo_youtube {
-  background: url(./images/icon-youtube.svg) no-repeat;
+  background: url(/images/icon-youtube.svg) no-repeat;
   background-size: 20px;
   height: 20px;
   width: 20px;
@@ -324,7 +324,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
     width: 75vw;
   }
   .top .content .box {
-    height: 22vh;
+    height: 195px;
   }
   .top .content .box .num {
     font-size: 3rem;
@@ -340,7 +340,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
     width: 75vw;
   }
   .bottom .content .box {
-    height: 14vh;
+    height: 150px;
     width: 16vw;
   }
   .bottom .content .box .score {
@@ -375,7 +375,7 @@ Pour utiliser => @media only screen and (min-width: 1440px){}
   }
 
   .top .content .box {
-    height: 20vh;
+    height: 195px;
   }
 
   .top .content .box .follow {
